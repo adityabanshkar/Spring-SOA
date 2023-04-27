@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="10 recently created Account">
+        <template if:true={accList}>
+            <lightning-datatable
+             key-field='id'
+             data={accList}
+             columns={columns}>
+            </lightning-datatable>
+        </template>
+        
+    </lightning-card> 
+    
+</template>
